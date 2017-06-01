@@ -53,3 +53,7 @@ This Discord bot is a type of *raid prevention*.  I have seen several raids wher
 - `joinnotify [yes|no]` enables or disables dming when joining a server (no arguments will toggle the state)
 - `leavenotify [yes|no]` enables or disables dming when leaving a server (no arguments will toggle the state)
 - `help` gives you this help list
+
+## Questions?
+
+Feel free to DM me on Discord, `@Jake#1885`
