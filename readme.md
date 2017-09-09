@@ -7,19 +7,19 @@ This Discord bot is a type of *raid prevention*.  I have seen several raids wher
 ## How to Install and Run
 
 1. Install [node.js](https://nodejs.org/)
-2. Install [Discordie](https://github.com/qeled/discordie) using [`npm install discordie`](https://qeled.github.io/discordie/)
-3. Download [bot.js](https://github.com/jaketr00/hammer-time/blob/master/bot.js)
-4. Make a bot (skip to use an existing bot)
+2. Download [bot.js](https://github.com/jaketr00/hammer-time/blob/master/bot.js)
+3. Make a bot (skip to use an existing bot)
     - Go to the [bots page](https://discordapp.com/developers/applications/me) and click **New App**
-5. Make sure it is a bot user
-6. Next to **Token** click **click to reveal**
-7. Copy the token and paste it between the quotation marks in **line 1** of [bot.js](https://github.com/jaketr00/hammer-time/blob/master/bot.js)
+4. Make sure it is a bot user
+5. Next to **Token** click **click to reveal**
+6. Copy the token and paste it between the quotation marks in **line 1** of [bot.js](https://github.com/jaketr00/hammer-time/blob/master/bot.js)
     - Should look like `const botToken = 'yourBotToken';`
-8. Open Discord and make sure your have **Developer Mode** enabled
+7. Open Discord and make sure your have **Developer Mode** enabled
     - Go to **User Settings** > **Appearance** > enable **Developer Mode**
-9. Right click (or control+click on mac) your name, then click **Copy ID**
-10. Paste your ID between the quotation marks in **line 2** of [bot.js](https://github.com/jaketr00/hammer-time/blob/master/bot.js)
+8. Right click (or control+click on mac) your name, then click **Copy ID**
+9. Paste your ID between the quotation marks in **line 2** of [bot.js](https://github.com/jaketr00/hammer-time/blob/master/bot.js)
     - Should look like `const ownerID = 'yourDiscordID';`
+10. Run `npm install` to install dependencies
 11. Run `node ./bot.js` from your terminal (make sure to replace `./bot.js` with the directory of the file)
     - This will create several files and folders, the folder location can be defined with the `basedir` constant in **line 4**
 

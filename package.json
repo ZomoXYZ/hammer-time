@@ -1,0 +1,20 @@
+{
+    "name": "hammerTime",
+    "version": "1.0.0",
+    "description": "Hammer Time",
+    "bugs": {
+        "url": "https://github.com/jaketr00/hammer-time/issues"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "jaketr00",
+        "email": "jaketr00@gmail.com"
+    },
+    "main": "main.js",
+    "scripts": {
+        "start": "node ./bot.js"
+    },
+    "dependencies": {
+        "discordie": "^0.11.0"
+    }
+}
