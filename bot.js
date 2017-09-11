@@ -1,7 +1,9 @@
 const botToken = ''; //--REQUIRED--
 const ownerID = ''; //--REQUIRED--
 
-const basedir = __dirname+'/files/'; //default: __dirname+'/files/'
+const basedirext = '/files/', //default: '/files/'
+      basedirsplit = basedirext.split('/').filter(c => c.length),
+      basedir = __dirname+basedirext;
 
 const http = require('http');
 const fs = require('fs');
@@ -23,6 +25,20 @@ else if (!ownerID)
 else
     server.listen(port, hostname, () => {
         console.log(`Server running at http://${hostname}:${port}/`);
+        
+        var createFolderFunction = (i) => {
+            if (basedirext.length > i) {
+                var dir = __dirname+'/';
+                for (var j = 0; i >= j; j++)
+                    dir+=basedirsplit[j];
+
+                if (!fs.existsSync(dir))
+                    fs.mkdirSync(dir);
+                
+                createFolderFunction(++i);
+            }
+        };
+        createFolderFunction(0);
 
         var usernamelist = {},
             bans = {},
@@ -35,8 +51,7 @@ else
             if (err && err.code === 'ENOENT')
                 fs.writeFile(basedir+'blacklisted.json', '{}', function(err) {
                     if (err) throw err;
-                });
-            else if (err)
+                });else if (err)
                 throw err;
             else
                 blacklisted = JSON.parse(data);
