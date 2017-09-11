@@ -4,7 +4,7 @@ const ownerID = ''; //--REQUIRED--
 const basedir = __dirname+'/files/'; //default: __dirname+'/files/'
 
 const http = require('http');
-const fs = require('file-system');
+const fs = require('fs');
 const discordie = require('discordie');
 
 const hostname = '127.0.0.1';
