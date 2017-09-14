@@ -27,7 +27,7 @@ else
         console.log(`Server running at http://${hostname}:${port}/`);
         
         var createFolderFunction = (i) => {
-            if (basedirext.length > i) {
+            if (basedirsplit.length > i) {
                 var dir = __dirname+'/';
                 for (var j = 0; i >= j; j++)
                     dir+=basedirsplit[j];
