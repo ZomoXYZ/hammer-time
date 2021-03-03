@@ -1,3 +1,9 @@
+# ARCHIVED
+
+There is no reason for me to keep this bot up to date, especially since Discord has added numerous security features since I first made this.
+
+**This bot will not be updated**
+
 # Hammer Time
 
 ## What is it?
